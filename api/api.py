@@ -11,7 +11,7 @@ class Video(Resource):
     def get(self):
         return {'time': time.time()}
 
-api.add_resource(Video, '/')
+api.add_resource(Video, '/video')
 
 if __name__ == '__main__':
     app.run(debug=True)
